@@ -19,19 +19,25 @@
 
 
     <div class="searchbar-container m-5">
-        <form class="form-inline searchbar">
-            <input class="form-control mr-sm-2" type="search" placeholder="Suchen" aria-label="Search">
-            <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Suchen</button>
-        </form>
-        <span></span>
+        <div class="form-inline searchbar">
+            <input class="form-control mr-sm-2" type="text" placeholder="Suchen" aria-label="Search">
+            <button onclick="getSynonyms()" class="btn btn-outline-primary my-2 my-sm-0" type="submit">Suchen</button>
+        </div>
+        <div class="center mg5" id="synsum"><span></span></div>
     </div>
 
-    <div class="content-container">
+    <div class="content-container" id="content-container">
 
-        <div class="content1" id="content1"><h2>Ähnlichste Synonyme:</h2></div>
-        <div class="content2" id="content2"><h2>Verwandte Synonyme:</h2></div>
-        <div class="content3" id="content3"><h2>Assoziierte Synonyme:</h2></div>
-        <div class="content4" id="content4"><h2>Fernere Synonyme:</h2></div>
+        <div class="content1" id="content1">
+            <div class="center"><h2>Ähnlichste Synonyme:</h2></div>
+            <ul class="list-group" id="list-content">
+                <li class="list-group-item">Cras justo odio</li>
+                <li class="list-group-item">Dapibus ac facilisis in</li>
+                <li class="list-group-item">Morbi leo risus</li>
+                <li class="list-group-item">Porta ac consectetur ac</li>
+                <li class="list-group-item">Vestibulum at eros</li>
+              </ul>
+        </div>
 
     </div>
 </body>
